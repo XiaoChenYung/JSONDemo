@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WeData.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    WeData *weData = [[WeData alloc] init];
+    [weData loadData];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
